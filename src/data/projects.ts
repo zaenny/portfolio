@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "taskmate_fe",
-    period: "2025.03 — 2025.04",
+    period: "2026.03 — 2026.04",
     desc: "팀 협업 그룹웨어 · Codeit Sprint FESI-13 팀 프로젝트",
     team: "프론트엔드 3명 · 백엔드 2명 · 디자이너 1명",
     bullets: [
