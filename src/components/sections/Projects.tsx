@@ -26,9 +26,6 @@ export default function Projects() {
                     {project.period}
                   </p>
                 </div>
-                <p className="text-[13px] text-muted leading-[1.8] mb-[14px]">
-                  {project.desc}
-                </p>
                 <p className="text-[13px] text-muted leading-[1.8] mb-[6px]">
                   {project.desc}
                 </p>

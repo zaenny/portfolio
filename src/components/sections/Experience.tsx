@@ -53,8 +53,7 @@ export default function Experience() {
               </div>
               <div className="flex flex-col gap-[5px]">
                 {[
-                  "taskmate_fe — 팀 협업 그룹웨어 · BFF 아키텍처 설계 · 인증 시스템 구현 · CI/CD 구축",
-                  "reading-log — 독서 기록 개인 프로젝트 · f-lab 멘토링 진행 중",
+                  "taskmate_fe — 팀 협업 그룹웨어 · BFF 아키텍처 설계 · 인증 시스템 구현",
                 ].map((bullet, i) => (
                   <p
                     key={i}

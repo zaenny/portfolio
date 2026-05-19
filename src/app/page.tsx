@@ -20,8 +20,8 @@ export default function Home() {
         <SiProjects />
         <Skills />
         <Projects />
-        <Contact />
         <Archiving />
+        <Contact />
       </main>
       <Footer />
     </>
