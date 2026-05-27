@@ -1,5 +1,3 @@
-"use client";
-
 export default function Hero() {
   return (
     <section id="hero" className="bg-bg-s py-[100px] border-b border-sand-l">

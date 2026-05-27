@@ -1,9 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import RevealWrapper from "@/components/ui/RevealWrapper";
 import SectionLabel from "@/components/ui/SectionLabel";
 import Tag from "@/components/ui/Tag";
+import ProjectModal from "@/components/ui/ProjectModal";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
+  const [selected, setSelected] = useState<number | null>(null);
+  const activeProject = projects.find((p) => p.id === selected);
+
   return (
     <section id="projects" className="bg-bg py-[80px]">
       <div className="max-w-[880px] mx-auto px-[48px]">
@@ -35,9 +42,9 @@ export default function Projects() {
                   </p>
                 )}
                 <div className="flex flex-col gap-[5px] mb-[14px]">
-                  {project.bullets.map((bullet, j) => (
+                  {project.bullets.map((bullet) => (
                     <p
-                      key={j}
+                      key={bullet}
                       className="text-[13px] text-muted pl-[14px] relative leading-[1.7] before:content-['·'] before:absolute before:left-[4px] before:text-sand before:text-[16px] before:leading-[1.4]"
                     >
                       {bullet}
@@ -53,7 +60,7 @@ export default function Projects() {
                     />
                   ))}
                 </div>
-                <div className="pt-[16px] border-t border-sand-l">
+                <div className="pt-[16px] border-t border-sand-l flex items-center gap-[16px]">
                   <a
                     href={project.github}
                     target="_blank"
@@ -61,12 +68,28 @@ export default function Projects() {
                   >
                     ↗ GitHub
                   </a>
+                  {project.detail && (
+                    <button
+                      onClick={() => setSelected(project.id)}
+                      className="font-mono text-[11px] text-muted hover:text-navy transition-colors"
+                    >
+                      + 자세히 보기
+                    </button>
+                  )}
                 </div>
               </div>
             </RevealWrapper>
           ))}
         </div>
       </div>
+
+      {activeProject && (
+        <ProjectModal
+          name={activeProject.name}
+          detail={activeProject.detail}
+          onClose={() => setSelected(null)}
+        />
+      )}
     </section>
   );
 }

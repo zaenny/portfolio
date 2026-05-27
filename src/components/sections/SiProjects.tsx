@@ -5,7 +5,7 @@ import { siProjects } from "@/data/siProjects";
 
 export default function SiProjects() {
   return (
-    <section id="si-projects" className="bg-bg py-[80px]">
+    <section id="si-projects" className="bg-bg-s py-[80px] border-t border-sand-l">
       <div className="max-w-[880px] mx-auto px-[48px]">
         <RevealWrapper>
           <SectionLabel>Career</SectionLabel>
