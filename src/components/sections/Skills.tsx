@@ -13,26 +13,13 @@ export default function Skills() {
         <RevealWrapper>
           <SectionLabel>Skills</SectionLabel>
         </RevealWrapper>
-        <div className="flex flex-col gap-[28px]">
-          {skills.map((group, i) => (
-            <RevealWrapper key={group.label} delay={i * 100}>
-              <div>
-                <p className="font-mono text-[10px] tracking-[0.12em] uppercase text-light mb-[10px]">
-                  {group.label}
-                </p>
-                <div className="flex flex-wrap gap-[8px]">
-                  {group.items.map((item) => (
-                    <Tag
-                      key={item.name}
-                      name={item.name}
-                      highlight={item.highlight}
-                    />
-                  ))}
-                </div>
-              </div>
-            </RevealWrapper>
-          ))}
-        </div>
+        <RevealWrapper delay={100}>
+          <div className="flex flex-wrap gap-[8px]">
+            {skills.map((skill) => (
+              <Tag key={skill.name} name={skill.name} highlight={skill.highlight} />
+            ))}
+          </div>
+        </RevealWrapper>
       </div>
     </section>
   );

@@ -8,12 +8,11 @@ export default function SiProjects() {
     <section id="si-projects" className="bg-bg py-[80px]">
       <div className="max-w-[880px] mx-auto px-[48px]">
         <RevealWrapper>
-          <SectionLabel>SI Projects</SectionLabel>
+          <SectionLabel>Career</SectionLabel>
         </RevealWrapper>
         <RevealWrapper delay={100}>
           <p className="text-[14px] text-muted leading-[1.8] mb-[44px] max-w-[580px]">
-            ㈜ 아와소프트 재직 기간(2020 — 2025) 동안 수행한 프로젝트입니다.
-            금융·공공 도메인에서 프론트엔드와 백엔드를 함께 개발했습니다.
+            ㈜ 아와소프트 재직(2020 — 2025) 중 수행한 프로젝트들입니다.
           </p>
         </RevealWrapper>
 
@@ -43,19 +42,14 @@ export default function SiProjects() {
                     <p className="text-[15px] font-medium text-navy">
                       {project.name}
                     </p>
-                    <div className="flex items-center gap-[8px] flex-shrink-0">
-                      <span className="text-[10px] bg-tag-bg text-muted rounded-[3px] px-[8px] py-[2px] border border-sand-l">
-                        {project.domain}
-                      </span>
-                      <span className="font-mono text-[11px] text-light">
-                        {project.period}
-                      </span>
-                    </div>
+                    <span className="font-mono text-[11px] text-light flex-shrink-0">
+                      {project.period}
+                    </span>
                   </div>
                   <div className="flex flex-col gap-[5px] mb-[12px]">
-                    {project.bullets.map((bullet, j) => (
+                    {project.bullets.map((bullet) => (
                       <p
-                        key={j}
+                        key={bullet}
                         className="text-[13px] text-muted pl-[14px] relative leading-[1.7] before:content-['·'] before:absolute before:left-[4px] before:text-sand before:text-[16px] before:leading-[1.4]"
                       >
                         {bullet}

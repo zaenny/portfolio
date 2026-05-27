@@ -24,7 +24,7 @@ const notoSansKR = Noto_Sans_KR({
 export const metadata: Metadata = {
   title: "Lee Jaein — Frontend Engineer",
   description:
-    "5년간 금융·공공 SI를 거쳐 모던 프론트엔드로 전환한 개발자 Lee Jaein의 포트폴리오입니다.",
+    "5년간 금융·공공 서비스를 개발해온 프론트엔드 엔지니어 Lee Jaein입니다.",
 };
 
 export default function RootLayout({

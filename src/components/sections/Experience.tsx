@@ -54,9 +54,9 @@ export default function Experience() {
               <div className="flex flex-col gap-[5px]">
                 {[
                   "taskmate_fe — 팀 협업 그룹웨어 · BFF 아키텍처 설계 · 인증 시스템 구현",
-                ].map((bullet, i) => (
+                ].map((bullet) => (
                   <p
-                    key={i}
+                    key={bullet}
                     className="text-[13px] text-muted pl-[14px] relative leading-[1.65] before:content-['—'] before:absolute before:left-0 before:text-sand before:text-[11px] before:top-[2px]"
                   >
                     {bullet}
@@ -98,12 +98,12 @@ export default function Experience() {
               </div>
               <div className="flex flex-col gap-[5px]">
                 {[
-                  "금융·공공 도메인 프로젝트 9건 수행 (신한은행, 손해보험협회, 한국도로공사, KBIZ 등)",
+                  "금융·공공 분야 프로젝트 9건 수행 (신한은행, 손해보험협회, 한국도로공사, KBIZ 등)",
                   "프론트엔드 개발 · 백엔드 유지보수 · 안드로이드 앱 유지보수 담당",
                   "네이버 OAuth 2.0 인증, OCR 솔루션, JasperSoft 보고서 등 외부 솔루션 연동 다수 경험",
-                ].map((bullet, i) => (
+                ].map((bullet) => (
                   <p
-                    key={i}
+                    key={bullet}
                     className="text-[13px] text-muted pl-[14px] relative leading-[1.65] before:content-['—'] before:absolute before:left-0 before:text-sand before:text-[11px] before:top-[2px]"
                   >
                     {bullet}

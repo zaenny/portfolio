@@ -5,8 +5,7 @@ export default function Hero() {
     <section id="hero" className="bg-bg-s py-[100px] border-b border-sand-l">
       <div className="max-w-[880px] mx-auto px-[48px]">
         <p
-          className="font-mono text-[11px] tracking-[0.16em] uppercase text-light mb-[20px]"
-          style={{ animation: "fadeUp 0.6s ease forwards 0.1s", opacity: 0 }}
+          className="font-mono text-[11px] tracking-[0.16em] uppercase text-light mb-[20px] animate-fade-up [animation-delay:100ms]"
         >
           Frontend Engineer
         </p>
@@ -19,16 +18,13 @@ export default function Hero() {
           <span className="text-navy-l italic">더 나은 코드를</span> 고민합니다
         </h1>
         <p
-          className="text-[15px] text-muted max-w-[520px] leading-[1.85] mb-[36px]"
-          style={{ animation: "fadeUp 0.7s ease forwards 0.35s", opacity: 0 }}
+          className="text-[15px] text-muted max-w-[520px] leading-[1.85] mb-[36px] animate-fade-up [animation-delay:350ms]"
         >
-          5년간 금융·공공 SI에서 프론트엔드와 백엔드를 함께 다루며, 코드리뷰와
-          성장이 있는 환경을 찾아 모던 프론트엔드로 전환했습니다. React ·
-          Next.js · TypeScript로 더 나은 사용자 경험을 만들어 갑니다.
+          5년간 금융·공공 등 다양한 서비스를 개발하며, 사용자와 가장 가까운
+          프론트엔드에서 더 나은 경험을 만드는 코드를 고민합니다.
         </p>
         <div
-          className="flex gap-[12px] flex-wrap"
-          style={{ animation: "fadeUp 0.6s ease forwards 0.5s", opacity: 0 }}
+          className="flex gap-[12px] flex-wrap animate-fade-up [animation-delay:500ms]"
         >
           <a
             href="#projects"

@@ -12,26 +12,17 @@ export default function About() {
           <RevealWrapper delay={100}>
             <div className="flex flex-col gap-[16px] text-[15px] text-muted leading-[1.9]">
               <p>
-                SI 환경에서{" "}
+                금융·공공 등{" "}
                 <strong className="text-navy font-medium">
-                  금융·공공 도메인
-                </strong>{" "}
-                프로젝트를 5년간 수행하며 프론트엔드부터 백엔드, 안드로이드 앱
-                유지보수까지 폭넓게 경험했습니다.
-              </p>
-              <p>
-                코드리뷰 없이 {'"돌아가면 끝"'}인 환경에서 스스로의 성장을
-                확인하기 어려웠고, 더 나은 코드를 고민하고 피드백받을 수 있는
-                환경을 찾아{" "}
-                <strong className="text-navy font-medium">
-                  모던 프론트엔드
+                  다양한 서비스
                 </strong>
-                로 전환을 결심했습니다.
+                를 개발하며 서버부터 클라이언트까지 폭넓게 경험했습니다.
               </p>
               <p>
-                현재 Codeit Sprint FESI-13 과정을 통해 팀 협업과 Next.js ·
-                TypeScript · TanStack Query 등 최신 기술을 실전에 적용하며
-                꾸준히 성장하고 있습니다.
+                그 과정에서 사용자와 가장 직접적으로 맞닿는{" "}
+                <strong className="text-navy font-medium">프론트엔드</strong>에
+                더 깊이 집중하고 싶어졌고, 더 나은 경험을 만드는 방향으로
+                전환을 결심했습니다.
               </p>
             </div>
           </RevealWrapper>
@@ -55,9 +46,9 @@ export default function About() {
                   value: "velog.io/@sage116",
                   href: "https://velog.io/@sage116",
                 },
-              ].map((item, i) => (
+              ].map((item) => (
                 <div
-                  key={i}
+                  key={item.label}
                   className="flex items-start gap-[16px] py-[13px] border-b border-sand-l first:border-t first:border-sand-l"
                 >
                   <span className="font-mono text-[10px] tracking-[0.1em] uppercase text-light w-[72px] flex-shrink-0 pt-[2px]">

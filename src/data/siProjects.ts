@@ -2,14 +2,11 @@ export const siProjects = [
   {
     id: 1,
     name: "KBIZ 노란우산 요령개정 및 법개정 사항 반영",
-    domain: "금융",
-    period: "25.05 — 25.07",
+    period: "2025.04 — 2025.07",
     bullets: [
-      "중간정산 후 공제금 수령 시 시뮬레이션 기능 추가",
-      "계약원장 퇴직소득 상세 내역 수정 요청 반영",
-      "고객사 현업 인터뷰 및 업무 프로세스 분석 담당",
-      "고객사가 인지하지 못했던 요구사항 누락·충돌 항목 발굴 및 문서화, 고객사에 전달",
-      "요구사항 재정의 진행 중 퇴사",
+      "법령 개정 사항 반영으로 공제금 수령 시뮬레이션 기능 개발 — 사용자가 중간정산 후 수령액을 직접 확인할 수 있도록 화면 설계 및 구현",
+      "계약원장 퇴직소득 상세 내역 화면 수정",
+      "고객사 현업 인터뷰를 통해 요구사항 누락·충돌 항목을 발굴하고 문서화하여 고객사에 전달",
     ],
     tags: ["JavaScript", "jQuery", "Java", "Spring"],
     highlight: ["JavaScript", "jQuery"],
@@ -18,40 +15,25 @@ export const siProjects = [
   {
     id: 2,
     name: "Kbiz 공제기금 비대면 채널 가입자 인증방식 변경",
-    domain: "금융",
-    period: "25.03 — 25.05",
+    period: "2025.01 — 2025.06",
     bullets: [
-      "네이버 개발자 가이드 분석 후 OAuth 2.0 기반 소셜 로그인 FE · BE 풀스택 구현",
-      "하이브리드 앱 환경에서 앱 스킴(App Scheme) 처리로 웹/앱 통합 인증 플로우 구성",
-      "기존 복잡한 본인인증 절차를 간편 로그인으로 개선하여 가입 편의성 향상",
+      "공인인증서에만 의존하던 인증 방식을 간편 로그인으로 확대하려는 고객사 요청으로, 네이버 OAuth 2.0 인증 플로우를 프론트엔드부터 백엔드까지 단독 구현",
+      "네이버 실명인증 결과를 서버에서 수신해 기존 회원 DB와 대조 후 자체 토큰을 발급하는 인증 파이프라인 설계",
+      "도입 후 간편 로그인 이용이 공인인증서 이용을 상회",
     ],
     tags: ["JavaScript", "jQuery", "Naver OAuth 2.0", "Java", "하이브리드 앱"],
     highlight: ["JavaScript", "jQuery", "Naver OAuth 2.0"],
     dimmed: false,
   },
   {
-    id: 3,
-    name: "MES 솔루션",
-    domain: "제조",
-    period: "25.01 — 25.02",
-    bullets: [
-      "고객사 현업 인터뷰 및 업무 프로세스 분석, 시스템 설계 담당",
-      "다른 프로젝트 투입으로 인해 설계 진행 중 이탈 (개발 미진행)",
-    ],
-    tags: ["업무 분석", "시스템 설계"],
-    highlight: [] as string[],
-    dimmed: true,
-  },
-  {
     id: 4,
     name: "손해보험협회 보험사기사건관리 구축 및 공시시스템 개편",
-    domain: "금융",
-    period: "24.07 — 24.12",
+    period: "2024.07 — 2024.12",
     bullets: [
-      "보험사기 관리를 위한 공시시스템 FE 개발 — ajax · tuiGrid 공통 모듈 설계 및 구현으로 코드 재사용성 향상",
-      "async/await 기반 비동기 데이터 조회 패턴 적용으로 콜백 지옥 해소 및 코드 가독성 개선",
-      "sheetjs 라이브러리 연동으로 대용량 데이터 엑셀 다운로드 기능 구현",
-      "보험사기 관리자 시스템 신규 개발로 담당자 업무 처리 효율화",
+      "팀원마다 AJAX 호출 코드를 각자 작성해 중복이 누적되는 문제를 해결하기 위해 공통 AJAX 모듈을 설계, 이후 개발에서 공통 모듈 기반으로 표준화",
+      "async/await 패턴으로 콜백 중첩 구조를 정리해 코드 가독성 개선",
+      "대용량 보험 데이터 엑셀 다운로드 기능 구현",
+      "보험사기 담당자 업무 처리를 위한 관리자 시스템 신규 개발",
     ],
     tags: ["JavaScript", "jQuery", "tuiGrid", "sheetjs", "async/await", "AJAX"],
     highlight: ["JavaScript", "jQuery", "tuiGrid"],
@@ -60,8 +42,7 @@ export const siProjects = [
   {
     id: 5,
     name: "안전톡 웹사이트 — 위험요소관리 시스템",
-    domain: "공공",
-    period: "24.04 — 24.06",
+    period: "2024.04 — 2024.06",
     bullets: [
       "공사현장 관리자가 현장 위험요소를 관리하는 관리자 도구 FE · BE 풀스택 개발",
       "Ajax + Thymeleaf 조합으로 서버사이드 렌더링 기반 리스트 조회 및 표출 구현",
@@ -75,12 +56,11 @@ export const siProjects = [
   {
     id: 6,
     name: "신한은행 법인대출 중개 플랫폼 구축",
-    domain: "금융",
-    period: "23.09 — 24.03",
+    period: "2023.09 — 2024.03",
     bullets: [
-      "loannbiz.com 관리자 플랫폼 FE 단독 개발 — 접속수·가입현황·대출진행 현황 등 메인 대시보드 전 화면 담당",
-      "echart 라이브러리로 대출 관련 통계 차트 구현, jsgrid로 대출 양식 데이터 그리드 표출",
-      "sheetjs 엑셀 다운로드 기능 구현, 일반/법인사용자 권한별 게시판 접근 제어 구현",
+      "관리 도구 자체가 없어 내부 직원이 현황을 통합 관리할 수 없던 상황에서, 대출 신청·기업 목록·서류 조회까지 관리자 플랫폼 전체를 단독 개발 (0→1)",
+      "대출 신청·승인·진행 현황을 차트와 데이터 그리드로 시각화, 사용자 유형별 접근 권한 제어 구현",
+      "엑셀 다운로드 기능으로 데이터 추출 업무 효율화",
     ],
     tags: ["JavaScript", "jQuery", "echart", "jsgrid", "sheetjs", "AJAX"],
     highlight: ["JavaScript", "jQuery", "echart"],
@@ -89,8 +69,7 @@ export const siProjects = [
   {
     id: 7,
     name: "한국도로공사 영업정보시스템 유지관리",
-    domain: "공공",
-    period: "23.02 — 23.08",
+    period: "2023.02 — 2023.08",
     bullets: [
       "고속도로 통행료 홈페이지 FE · BE 유지보수",
       "JavaScript · jQuery 사용자 화면 유지보수, JSP 이벤트 화면 개발 및 API 생성",
@@ -102,8 +81,7 @@ export const siProjects = [
   {
     id: 8,
     name: "신한은행 화상상담서비스 확대 구축",
-    domain: "금융",
-    period: "22.08 — 23.01",
+    period: "2022.08 — 2023.01",
     bullets: [
       "다양한 인입채널 화상상담 중 상담사 서비스 화면 FE 개발",
       "AJAX · Fetch API 기반 비동기 데이터 조회 구현",
@@ -116,8 +94,7 @@ export const siProjects = [
   {
     id: 9,
     name: "KBIZ 디지털 공제시스템(노란우산) 구축",
-    domain: "금융",
-    period: "21.09 — 22.07",
+    period: "2021.09 — 2022.07",
     bullets: [
       "대출 연장 기능 FE · BE 개발 — 프론트엔드와 백엔드 간 원활한 데이터 통신을 위한 API 설계 및 구현",
       "AJAX 비동기 데이터 조회 및 화면 갱신, JavaScript · jQuery 데이터 표출 구현",
@@ -130,8 +107,7 @@ export const siProjects = [
   {
     id: 10,
     name: "한국도로공사 통합정보시스템 유지관리",
-    domain: "공공",
-    period: "20.06 — 21.08",
+    period: "2020.06 — 2021.08",
     bullets: [
       "사내앱·자재장비·스마트공사관리·고속도로상황대응 등 안드로이드 기반 앱 + 웹뷰 앱 유지보수",
       "Android Studio + Java로 내부직원용·대국민 제공용 앱 유지보수, 구글스토어·원스토어 배포",

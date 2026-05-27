@@ -6,11 +6,10 @@ export const projects = [
     desc: "팀 협업 그룹웨어 · Codeit Sprint FESI-13 팀 프로젝트",
     team: "프론트엔드 3명 · 백엔드 2명 · 디자이너 1명",
     bullets: [
-      "구글 · 카카오 OAuth 소셜 로그인 구현, Access/Refresh 토큰 갱신 로직 직접 구현",
-      "Next.js proxy.ts 기반 인증 미들웨어 구성, 로그인·회원가입 화면 전담 개발",
-      "Next.js App Router 기반 BFF 아키텍처 설계 및 구현",
-      "Tailwind CSS v4 커스텀 테마 변수 및 반응형 브레이크포인트 설정",
-      "cva 기반 재사용 컴포넌트(Input, SearchInput) 설계",
+      "백엔드와 프론트 도메인이 달라 토큰을 직접 설정할 수 없는 구조적 제약을 해결하기 위해 Next.js 서버를 BFF로 구성, 토큰을 HttpOnly 쿠키로 전환해 클라이언트 노출 없이 인증 처리",
+      "토큰 만료 시 서버에서 자동 갱신 후 재요청하는 인터셉터 구현 — 사용자가 로그인 상태 끊김 없이 서비스 이용 가능",
+      "구글·카카오 소셜 로그인 통합, 로그인·회원가입 화면 전담 개발",
+      "cva 기반 Input, SearchInput 컴포넌트 설계로 일관된 UI 유지",
     ],
     tags: [
       "Next.js",
