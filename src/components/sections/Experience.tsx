@@ -100,7 +100,7 @@ export default function Experience() {
                 {[
                   "금융·공공 분야 프로젝트 9건 수행 (신한은행, 손해보험협회, 한국도로공사, KBIZ 등)",
                   "프론트엔드 개발 · 백엔드 유지보수 · 안드로이드 앱 유지보수 담당",
-                  "네이버 OAuth 2.0 인증, OCR 솔루션, JasperSoft 보고서 등 외부 솔루션 연동 다수 경험",
+                  "네이버 OAuth 2.0 인증, JasperSoft 보고서 등 외부 솔루션 연동 다수 경험",
                 ].map((bullet) => (
                   <p
                     key={bullet}
